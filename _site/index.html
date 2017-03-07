@@ -1,27 +1,29 @@
----
-layout: default
-skills:
-  - icon: flag
-    title: Skill 1
-    desc: This is the description of my skill.
-  - icon: bug
-    title: Skill 2
-    desc: This is the description of my skill.
-  - icon: bomb
-    title: Skill 3
-    desc: This is the description of my skill.
-  - icon: globe
-    title: Skill 4
-    desc: This is the description of my skill.
-  - icon: globe
-    title: Skill 5
-    desc: This is the description of my skill.
-  - icon: globe
-    title: Skill 6
-    desc: This is the description of my skill.
+<!DOCTYPE html>
+<html>
 
----
-    <section class="top-banner center">
+  <head>
+
+    <!--START head element-->
+
+    <title>Anja portfolio site</title>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- gridlex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+
+    <!--This is my main css file, keep at bottom-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!--END head element-->
+  </head>
+
+  <body>
+        <section class="top-banner center">
       <header>
         <div>
             LOGO
@@ -49,18 +51,62 @@ skills:
     <section id="skills" class="grid">
       <h2 class="col-12">My Skills</h2>
 
-      {% for skill in page.skills %}
+      
       <div class="col-4">
         <div class=center>
-          <i class="fa fa-{{skill.icon}}" aria-hidden="true"></i>
+          <i class="fa fa-flag" aria-hidden="true"></i>
         </div>
-        <h3>{{skill.title}}</h3>
-        <p>{{skill.desc}}</p>
+        <h3>Skill 1</h3>
+        <p>This is the description of my skill.</p>
       </div>
-      {% endfor %}
+      
+      <div class="col-4">
+        <div class=center>
+          <i class="fa fa-bug" aria-hidden="true"></i>
+        </div>
+        <h3>Skill 2</h3>
+        <p>This is the description of my skill.</p>
+      </div>
+      
+      <div class="col-4">
+        <div class=center>
+          <i class="fa fa-bomb" aria-hidden="true"></i>
+        </div>
+        <h3>Skill 3</h3>
+        <p>This is the description of my skill.</p>
+      </div>
+      
+      <div class="col-4">
+        <div class=center>
+          <i class="fa fa-globe" aria-hidden="true"></i>
+        </div>
+        <h3>Skill 4</h3>
+        <p>This is the description of my skill.</p>
+      </div>
+      
+      <div class="col-4">
+        <div class=center>
+          <i class="fa fa-globe" aria-hidden="true"></i>
+        </div>
+        <h3>Skill 5</h3>
+        <p>This is the description of my skill.</p>
+      </div>
+      
+      <div class="col-4">
+        <div class=center>
+          <i class="fa fa-globe" aria-hidden="true"></i>
+        </div>
+        <h3>Skill 6</h3>
+        <p>This is the description of my skill.</p>
+      </div>
+      
     </section>
 
-    {% include map.html %}
+    <section class="no-padding">
+  <!-- Map from google -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010290.7975268234!2d114.51105816599815!3d-8.455697404655568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sid!2sid!4v1488524669129" width="100%" height="450" frameborder="0" style="border:0; pointer-events:none" allowfullscreen></iframe>
+</section>
+
 
     <section id="experience">
       <!-- Section for my experience -->
@@ -110,3 +156,7 @@ skills:
 
       </nav>
     </footer>
+
+  </body>
+
+</html>
