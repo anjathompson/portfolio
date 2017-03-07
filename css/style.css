@@ -64,12 +64,17 @@ h1{
   font-size: 2rem;
 }
 
+h2{
+  margin-bottom: 4vh;
+}
+
 /*Header*/
 
 .top-banner {
   background-image: url("../images/giphy.gif");
   min-height: 100vh;
   background-size: cover;
+  /*background-position: fixed;*/
   background-attachment: fixed;
   background-position: 50% 50%;
   color: #fff;
@@ -91,4 +96,27 @@ font-size: 2rem
 /*Contact*/
 footer, footer a {
   color: white
+}
+
+/*Tablet devices*/
+
+@media (max-width: 48rem){
+
+  div {
+    width: 100%;
+    color: orange;
+  }
+
+  .mobile-hide {
+    display:none;
+  }
+
+  .tablet-hide {
+    display:none;
+  }
+
+  .skill-box p {
+    text-align: center;
+  }
+
 }
